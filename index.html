@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore 065</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+
+</head>
+
+
+<body>
+
+<!-- navegação -->
+<nav>
+    <img src="4.png" class="logo">
+
+    <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#turismo">Pontos turísticos</a></li>
+        <li><a href="#gastronomia">Gastronomia</a></li>
+        <li><a href="#artesanato">Artesanato</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+    </ul>
+</nav>
+
+<!-- imagem inicio -->
+<section id="inicio" class="hero">
+    <img src="CUIABÁ.png" class="hero-img">
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+    <div class="intro-text"> <!-- 🔥 ADICIONEI A CLASSE AQUI -->
+        <h2>Cuiabá</h2>
+
+        <p>
+            Cuiabá, capital de Mato Grosso, é uma metrópole histórica fundada em 1719 no ciclo do ouro, localizada no centro geodésico da América do Sul. 
+        </p>
+
+        <div class="stats">
+            <div><b>650.877</b><span>Habitantes</span></div>
+            <div><b>4.327</b><span>Km²</span></div>
+        </div>
+
+        <a href="#mapa" class="btn-mapa">MAPA INTERATIVO</a>
+    </div>
+</section>
+
+<!-- TURISMO -->
+<section id="turismo" class="section">
+
+    <div class="turismo-header">
+        <h2>Turismo e Lazer</h2>
+        <p class="sub">História, cultura e natureza em um só lugar.</p>
+    </div>
+
+    <div class="grid turismo-grid">
+        <div class="card turismo-card">
+            <img src="fundo.png">
+            <div class="card-body">
+                <h3>Orla do Porto</h3>
+                <p>Área revitalizada às margens do rio Cuiabá.</p>
+                <a href="https://www.encontracuiaba.com/agenda/orla-do-porto-cuiaba/" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card turismo-card">
+            <img src="parque mãe bonifácia.webp">
+            <div class="card-body">
+                <h3>Parque Mãe Bonifácia</h3>
+                <p>O principal pulmão verde da cidade.</p>
+                <a href="https://descubramatogrosso.com.br/atracoes/parque-estadual-mae-bonifacia/" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card turismo-card">
+            <img src="museu do rio.jpg">
+            <div class="card-body">
+                <h3>Museu do Rio</h3>
+                <p>História e cultura ribeirinha.</p>
+                <a href="https://www.bing.com/search?q=museu+do+rio+cuiaba&cvid=55293715d8814cd4855a9d9a0d65dfb9&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgcICBDrBxhA0gEINDA3MGowajmoAgiwAgE&FORM=ANAB01&PC=U531" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- GASTRONOMIA -->
+<section id="gastronomia" class="section light">
+
+    <div class="gastronomia-header">
+        <h2>Culinária Regional</h2>
+        <p class="sub">Sabores típicos que representam a cultura cuiabana.</p>
+    </div>
+
+    <div class="grid gastro-grid">
+        <div class="card gastro-card">
+            <img src="choppao.webp">
+            <div class="card-body">
+                <h3>Choppão</h3>
+                <p>Sabores autênticos da culinária regional.</p>
+                <a href="https://choppaomt.com.br/" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card gastro-card">
+            <img src="dona eulalia.jpg">
+            <div class="card-body">
+                <h3>Dona Eulália</h3>
+                <p>Tradicional bolo de arroz e queijo.</p>
+                <a href="https://web.facebook.com/eulaliaefamilia/?_rdc=11&_rdr#" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="card gastro-card">
+            <img src="lélis peixaria.jpg">
+            <div class="card-body">
+                <h3>Lélis Peixaria</h3>
+                <p>O melhor do peixe pantaneiro.</p>
+                <a href="https://web.facebook.com/lelispeixaria/?_rdc=11&_rdr#" target="_blank" class="btn-card">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ARTESANATO -->
+<section id="artesanato" class="section">
+
+    <!-- 🔥 ALTERADO -->
+    <div class="artesanato-header">
+        <h2>Arte e Cultura</h2>
+        <p class="sub">Tradições e expressões culturais da região.</p>
+    </div>
+
+    <div class="art">
+        <img src="viola de cocho.webp">
+        <div>
+            <h3>Violas de Cocho</h3>
+            <p>A viola de cocho é umm instrumento típico da região do Pantanal e da Baixada Cuiabana, com origem no período colonial. Ela surgiu da adaptação de instrumentos portugueses, mas foi transformada pelos povos locais - especialmente indígenas, africanos e ribeirinhos.
+                O nome "cocho" vem do fato de que ela é escavada em um único bloco de maddeira, como um cocho usado para alimentar animais. Esse modo de produção artesanal é passado de geração em geração.
+            </p>
+        </div>
+    </div>
+
+    <div class="art reverse">
+        <img src="bonecas de barro.jpg">
+        <div>
+            <h3>Bonecas de Barro</h3>
+            <p>As bonecas de barro de Cuiabá fazem parte da tradição ceramista da região, com raízes que também remontam ao período colonial, influenciadas principalmente pelas culturas indígena e africana.
+                Essas peças são moldadas manualmente, sem moldes industriais, e costumam representar: Mulheres cuiabanas, cenas do cotidiano, elementos da cultura regional.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- MAPA -->
+<section id="mapa" class="mapa">
+
+    <header class="map-header">
+        <h1>🗺 Mapa Interativo</h1>
+        <p>Clique, explore e descubra Cuiabá</p>
+    </header>
+
+    <div class="container-mapa">
+        <aside>
+            <input type="text" id="busca" placeholder="Para onde você quer ir?" />
+
+            <button class="cat-btn ativo" data-cat="Arte e Cultura">🎭 Arte e Cultura</button>
+            <button class="cat-btn" data-cat="Gastronomia">🍽 Gastronomia</button>
+            <button class="cat-btn" data-cat="Pontos Turísticos">📸 Pontos Turísticos</button>
+            <button class="cat-btn" data-cat="Lazer e Entretenimento">🎉 Lazer</button>
+            <button class="cat-btn" data-cat="Natureza">🌿 Natureza</button>
+
+            <button class="btn-todos" id="btnTodos">Selecionar Todos</button>
+        </aside>
+
+        <div id="mapa-leaflet"></div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LOGO + SOBRE -->
+        <div class="footer-col">
+            <img src="6.png" class="logo-footer">
+            <p>
+                Explore Cuiabá com o Explore 065. Descubra cultura, gastronomia 
+                e os melhores pontos turísticos da cidade.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+            <h3>Explorar</h3>
+            <ul>
+                <li><a href="#turismo">Turismo</a></li>
+                <li><a href="#gastronomia">Gastronomia</a></li>
+                <li><a href="#artesanato">Artesanato</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p>📍 Av. XV Novembro 303, Cuiabá, MT, 78020-300</p>
+            <p>📞 0800 777 9737</p>
+            <p>✉ contato@explore065.com</p>
+        </div>
+
+        <!-- REDES -->
+        <div class="footer-col">
+            <h3>Redes sociais</h3>
+            <div class="socials">
+                <a href="https://www.instagram.com/senaimt/">📸</a>
+                <a href="https://www.youtube.com/channel/UCosF0Eh-mrOYWTNHP7xZmHw">🎥</a>
+                <a href="https://web.facebook.com/senaimt?_rdc=1&_rdr#">🌐</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LINHA FINAL -->
+    <div class="footer-bottom">
+        <p>© 2026 Explore 065 — Todos os direitos reservados</p>
+    </div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
